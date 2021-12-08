@@ -182,7 +182,7 @@ while loop:
             if len(enemy_list) < 85:
                 enemy_list.append(enemy(random.randint(1, 4)))
         else:
-            if lent(enemy_list) <= 100:
+            if len(enemy_list) <= 100:
                 enemy_list.append(enemy(random.randint(1, 4)))
     
     if reload_timer > 0:
