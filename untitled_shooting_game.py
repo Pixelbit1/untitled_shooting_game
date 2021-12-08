@@ -103,6 +103,8 @@ while loop:
                         if person.x - 9 < mouse_coord[0] < person.x + 41 and person.y - 9 < mouse_coord[1] < person.y + 41:
                             enemy_list.remove(person)
                             kills += 1
+                else:
+                    reload_timer = 240
         if key.type == pygame.KEYDOWN:
             if key.key == pygame.K_r:
                 if reload_timer == 0 and ammo != 10:
